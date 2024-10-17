@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+
+:root {
+    --main: #c83535;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.HeroSection{
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-color: #c83535;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#firstHead{
+    font-family: "Rouge Script", cursive;
+    font-size: 3vw;
+}
+
+#secondHead{
+    font-size: 6vw;
+    margin: 2vw 0;
+    font-family: "Rouge Script", cursive;
+}
+
+#thirdHead{
+    font-family: "Rouge Script", cursive;
+    font-size: 3vw;
+}
+
+.HeroSection a{
+    text-decoration: none;
+    color: var(--main);
+    padding: 10px 1.5vw;
+    border-radius: 50px;
+    position: absolute;
+    top: 2vw;
+    left: 2vw;
+    background-color: white;
+    transition: 1s;
+}
+
+.HeroSection a:hover{
+    transition: .3s;
+    border: 1px solid white;
+    background-color: var(--main);
+    color: white;
+    border-radius: 0;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
