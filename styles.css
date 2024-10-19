@@ -10,6 +10,14 @@
     box-sizing: border-box;
 }
 
+html{
+    cursor: url('./Resources/cursor.png'), auto;
+}
+
+body {
+    background-color: var(--main);
+}
+
 .HeroSection{
     width: 100vw;
     height: 100vh;
