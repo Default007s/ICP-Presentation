@@ -10,8 +10,9 @@
     box-sizing: border-box;
 }
 
-html{
+html, h1, button, p, img{
     cursor: url('./Resources/cursor.png'), auto;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -88,10 +89,10 @@ body {
     align-items: center;
     color: white;
     margin-bottom: 3vw;
-    font-family: "Rogue Script", cursive;
+    font-family: "Rouge Script", cursive;
     animation-name: date;
     animation-duration: 2s;
-    font-size: 2vw;
+    font-size: 2.5vw;
 }
 
 .cardHero #dateMiddle{
@@ -128,9 +129,11 @@ body {
     border-radius: 20px;
 }
 
-.cardHero button{
+.cardHero a{
     border-radius: 50px;
     cursor: pointer;
+    text-decoration: none;
+    font-family: sans-serif;
     margin-top: 50px;
     color: white;
     background-color: transparent;
@@ -142,7 +145,7 @@ body {
     animation-duration: 2s;
 }
 
-.cardHero button:hover{
+.cardHero a:hover{
     transition: .4s;
     background-color: #fff;
     color: var(--main);
@@ -151,43 +154,63 @@ body {
 .container{
     padding: 2rem;
 }
-.slider-wrapper{
-    position: relative;
-    max-width: 100vw;
-    margin: 0 auto;
-}
-.slider{
+
+.OpenedBox{
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    aspect-ratio: 16/9;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory; 
-    scroll-behavior: smooth;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.OpenedBox h1{
+    color: white;
+    font-size: 3vw;
+}
+.OpenedBox .cardWrapper{
+    display: grid;
+    grid-gap: 2vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
-.slider img{
-    flex: 3 0 100%;
-    scroll-snap-align: start;
-    object-fit: cover;
-    width: 20vw;
-}
-.slider-nav {
+.OpenedBox .card{
     display: flex;
-    column-gap: 1rem;
-    position: absolute;
-    bottom: 1.25rem;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: 1;
-}
-.slider-nav a{
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background-color: var(--main);
-    opacity: 0.75;
-    transition: opacity ease 250ms;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    max-width: 40vw;
+    height: 30vh;
+    border-radius: 10px;
+    transition: .3s;
 }
 
-.slider-nav a:hover{
-    opacity: 1;
+.OpenedBox .card:hover{
+    transition: .3s;
+    box-shadow: 1px 1px 20px 5px white;
+}
+
+.OpenedBox .card img{
+    width: 10vw;
+    margin: 50px;
+}
+
+.OpenedBox .cardTxt h1{
+    color: var(--main);
+    font-size: 2vw;
+}
+.OpenedBox .cardTxt p{
+    font-size: .8vw;
+    font-family: sans-serif;
+}
+
+.OpenedBox .cardTxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    height: 100%;
+    padding: 50px;
+    color: var(--main);
 }
