@@ -29,7 +29,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
 
 #firstHead{
@@ -73,11 +72,11 @@ body {
 
 .cardHero{
     width: 100vw;
-    height: 130vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     background: rgb(207,108,108);
     background: radial-gradient(circle, rgba(207,108,108,1) 0%, rgb(187, 13, 13) 59%, rgb(187, 13, 13,1) 100%);
 }
@@ -153,6 +152,7 @@ body {
 }
 
 .OpenedBox{
+    padding-top: 5vw;
     background-color: var(--main);
     width: 100vw;
     height: 100vh;
@@ -178,7 +178,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    max-width: 40vw;
+    width: 40vw;
     height: 30vh;
     border-radius: 10px;
     transition: .3s;
@@ -200,13 +200,14 @@ body {
 }
 .OpenedBox .cardTxt p{
     font-size: .8vw;
+    margin-top: 10px;
     font-family: sans-serif;
 }
 
 .OpenedBox .cardTxt {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: stretch;
     height: 100%;
     padding: 50px;
@@ -254,4 +255,94 @@ body {
     font-size: 1.1vw;
     padding: 2vw;
     color: white;
+}
+
+/* ------------------------------------------Responsiveness------------------------------------- */
+
+@media (max-width: 1200px){
+    .HeroSection a{
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 1000px){
+    .OpenedBox{
+        height: auto;
+    }
+    .OpenedBox .cardWrapper{
+        margin-top: 5vw;
+        grid-template-columns: 1fr;
+    }
+    .OpenedBox .card{
+        width: 90vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .cardHero a{
+        border: 1px solid white;
+        font-size: 2vw;
+        padding: 1vw 3vw;
+    }  
+    .cardHero img{
+        width: 50vw;
+    }
+    .cardHero #date{
+        font-size: 5vw;
+        margin-bottom: 5vw;
+    }
+    .cardHero #dateMiddle{
+        border-right: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+    }
+    #firstHead{
+        font-size: 6vw;
+    }
+    #secondHead{
+        font-size: 8vw;
+    }
+    #thirdHead{
+        font-size: 6vw;
+    }
+    .HeroSection a{
+        font-size: 3vw;
+    }
+    .OpenedBox .cardTxt h1{
+        font-size: 3vw;
+    }
+    .OpenedBox .cardTxt p{
+        font-size: 1.5vw;
+    }
+    .OpenedBox h1{
+        font-size: 5vw;
+    }
+    .OpenedBox .cardTxt{
+        padding: 30px;
+    }
+}
+@media (max-width: 500px) {
+    .OpenedBox .card img{
+        margin: 30px;
+    }
+    .OpenedBox .cardTxt h1{
+        font-size: 4vw;
+    }
+    .OpenedBox .cardTxt p{
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .cardHero img{
+        width: 70vw;
+    }
+    .schedule h1{
+        font-size: 5vw;
+    }
+    .schedule .timingLane p{
+        font-size: 2vw;
+    }
+    #footer p{
+        font-size: 2vw;
+    }
 }
