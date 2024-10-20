@@ -16,7 +16,7 @@ html, h1, button, p, img{
 }
 
 body {
-    background-color: var(--main);
+    /* background-color: var(--main); */
 }
 
 .HeroSection{
@@ -73,16 +73,17 @@ body {
 
 .cardHero{
     width: 100vw;
-    height: 100vh;
+    height: 130vh;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     background: rgb(207,108,108);
     background: radial-gradient(circle, rgba(207,108,108,1) 0%, rgb(187, 13, 13) 59%, rgb(187, 13, 13,1) 100%);
 }
 
 .cardHero #date{
+    margin-top: 1.5vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -156,6 +157,7 @@ body {
 }
 
 .OpenedBox{
+    background-color: var(--main);
     width: 100vw;
     height: 100vh;
     display: flex;
