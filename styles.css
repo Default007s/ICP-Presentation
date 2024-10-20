@@ -319,20 +319,6 @@ body {
     .OpenedBox .cardTxt{
         padding: 30px;
     }
-}
-@media (max-width: 500px) {
-    .OpenedBox .card img{
-        margin: 30px;
-    }
-    .OpenedBox .cardTxt h1{
-        font-size: 4vw;
-    }
-    .OpenedBox .cardTxt p{
-        font-size: 2vw;
-    }
-}
-
-@media (max-width: 600px) {
     .cardHero img{
         width: 70vw;
     }
@@ -343,6 +329,17 @@ body {
         font-size: 2vw;
     }
     #footer p{
+        font-size: 2vw;
+    }
+}
+@media (max-width: 500px) {
+    .OpenedBox .card img{
+        margin: 30px;
+    }
+    .OpenedBox .cardTxt h1{
+        font-size: 4vw;
+    }
+    .OpenedBox .cardTxt p{
         font-size: 2vw;
     }
 }
