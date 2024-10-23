@@ -15,10 +15,6 @@ html, h1, button, p, img{
     scroll-behavior: smooth;
 }
 
-body {
-    /* background-color: var(--main); */
-}
-
 .HeroSection{
     width: 100vw;
     height: 100vh;
@@ -82,13 +78,13 @@ body {
 }
 
 .cardHero #date{
-    margin-top: 1.5vw;
+    margin-top: 1vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     color: white;
-    margin-bottom: 3vw;
+    margin-bottom: 2vw;
     font-family: "Rouge Script", cursive;
     animation-name: date;
     animation-duration: 2s;
@@ -261,11 +257,21 @@ body {
 
 @media (max-width: 1200px){
     .HeroSection a{
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
 }
 
 @media (max-width: 1000px){
+    .OpenedBox .cardTxt{
+        padding: 20px;
+    }
+    .OpenedBox .card img{
+        margin: 20px;
+        width: 8vw;
+    }
+}
+
+@media (max-width: 600px) {
     .OpenedBox{
         height: auto;
     }
@@ -276,9 +282,6 @@ body {
     .OpenedBox .card{
         width: 90vw;
     }
-}
-
-@media (max-width: 600px) {
     .cardHero a{
         border: 1px solid white;
         font-size: 2vw;
@@ -334,7 +337,8 @@ body {
 }
 @media (max-width: 500px) {
     .OpenedBox .card img{
-        margin: 30px;
+        margin: 10px;
+        width: 12vw;
     }
     .OpenedBox .cardTxt h1{
         font-size: 4vw;
