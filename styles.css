@@ -11,7 +11,7 @@
 }
 
 html, h1, button, p, img{
-    cursor: url('./Resources/cursor.png'), auto;
+    cursor: url('./Resources/cursor.webp'), auto;
     scroll-behavior: smooth;
 }
 
