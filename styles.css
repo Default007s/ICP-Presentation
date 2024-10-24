@@ -2,6 +2,7 @@
 
 :root {
     --main: #BB0D0D;
+    --secondary: #cf6c6c;
 }
 
 *{
@@ -19,8 +20,8 @@ html, h1, button, p, img{
     width: 100vw;
     height: 100vh;
     color: white;
-    background: rgb(207,108,108);
-    background: radial-gradient(circle, rgba(207,108,108,1) 0%, rgb(187, 13, 13) 59%, rgb(187, 13, 13,1) 100%);
+    background: var(--secondary);
+    background: radial-gradient(circle, var(--secondary) 0%, var(--main) 59%, var(--main) 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,8 +74,8 @@ html, h1, button, p, img{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background: rgb(207,108,108);
-    background: radial-gradient(circle, rgba(207,108,108,1) 0%, rgb(187, 13, 13) 59%, rgb(187, 13, 13,1) 100%);
+    background: var(--secondary);
+    background: radial-gradient(circle, var(--secondary) 0%, var(--main) 59%, var(--main) 100%);
 }
 
 .cardHero #date{
@@ -286,10 +287,7 @@ html, h1, button, p, img{
         border: 1px solid white;
         font-size: 2vw;
         padding: 1vw 3vw;
-    }  
-    .cardHero img{
-        width: 50vw;
-    }
+    } 
     .cardHero #date{
         font-size: 5vw;
         margin-bottom: 5vw;
@@ -323,7 +321,7 @@ html, h1, button, p, img{
         padding: 30px;
     }
     .cardHero img{
-        width: 70vw;
+        width: 50vw;
     }
     .schedule h1{
         font-size: 5vw;
